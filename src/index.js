@@ -14,9 +14,9 @@ import ReactDOM from "react-dom";
 // import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHook";
 
 // import { FocusScree } from "./components/04-useRef/FocusScree";
-import { RealExampleref } from "./components/04-useRef/RealExampleref";
+// import { RealExampleref } from "./components/04-useRef/RealExampleref";
 
-// import { Layout } from "./components/05-useLayoutEffect/Layout";
+import { Layout } from "./components/05-useLayoutEffect/Layout";
 
 // import { Memorize } from "./components/06-memos/Memorize";
 
@@ -30,7 +30,4 @@ import { RealExampleref } from "./components/04-useRef/RealExampleref";
 
 // import { MainApp } from "./components/09-useContext/MainApp";
 
-ReactDOM.render(
-  <RealExampleref />,
-  document.getElementById("root")
-);
+ReactDOM.render(<Layout />, document.getElementById("root"));
