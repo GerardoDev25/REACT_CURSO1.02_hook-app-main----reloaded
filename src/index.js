@@ -9,9 +9,9 @@ import ReactDOM from "react-dom";
 
 // import { SimpleForm } from "./components/02-useEffect/SimpleForm";
 
-import { FormWidthCustomHook } from "./components/02-useEffect/FormWidthCustomHook";
+// import { FormWidthCustomHook } from "./components/02-useEffect/FormWidthCustomHook";
 
-// import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHook";
+import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHook";
 
 // import { FocusScree } from "./components/04-useRef/FocusScree";
 
@@ -30,6 +30,6 @@ import { FormWidthCustomHook } from "./components/02-useEffect/FormWidthCustomHo
 // import { MainApp } from "./components/09-useContext/MainApp";
 
 ReactDOM.render(
-  <FormWidthCustomHook />,
+  <MultiplesCustomHook />,
   document.getElementById("root")
 );
