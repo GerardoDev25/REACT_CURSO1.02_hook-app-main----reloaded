@@ -13,7 +13,8 @@ import ReactDOM from "react-dom";
 
 // import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHook";
 
-import { FocusScree } from "./components/04-useRef/FocusScree";
+// import { FocusScree } from "./components/04-useRef/FocusScree";
+import { RealExampleref } from "./components/04-useRef/RealExampleref";
 
 // import { Layout } from "./components/05-useLayoutEffect/Layout";
 
@@ -29,4 +30,7 @@ import { FocusScree } from "./components/04-useRef/FocusScree";
 
 // import { MainApp } from "./components/09-useContext/MainApp";
 
-ReactDOM.render(<FocusScree />, document.getElementById("root"));
+ReactDOM.render(
+  <RealExampleref />,
+  document.getElementById("root")
+);

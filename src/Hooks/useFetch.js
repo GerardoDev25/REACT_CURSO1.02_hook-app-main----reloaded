@@ -15,7 +15,7 @@ export const useFetch = (url) => {
     };
   }, []);
 
-  useEffect( () => {
+  useEffect(() => {
     setstate({
       data: null,
       loading: true,
@@ -25,15 +25,13 @@ export const useFetch = (url) => {
     fetch(url)
       .then((resp) => resp.json())
       .then((data) => {
-        if (isMounter.current) {
+        if (isMounter.current)
           setstate({
             data,
             loading: false,
             error: null,
           });
-        } else {
-          console.log("Subcrition canceled");
-        }
+        else console.log("Subcrition canceled");
       })
       .catch(() => {
         setstate({
