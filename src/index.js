@@ -11,9 +11,9 @@ import ReactDOM from "react-dom";
 
 // import { FormWidthCustomHook } from "./components/02-useEffect/FormWidthCustomHook";
 
-import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHook";
+// import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHook";
 
-// import { FocusScree } from "./components/04-useRef/FocusScree";
+import { FocusScree } from "./components/04-useRef/FocusScree";
 
 // import { Layout } from "./components/05-useLayoutEffect/Layout";
 
@@ -29,7 +29,4 @@ import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHoo
 
 // import { MainApp } from "./components/09-useContext/MainApp";
 
-ReactDOM.render(
-  <MultiplesCustomHook />,
-  document.getElementById("root")
-);
+ReactDOM.render(<FocusScree />, document.getElementById("root"));
