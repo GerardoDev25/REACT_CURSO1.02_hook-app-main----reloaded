@@ -20,9 +20,9 @@ import ReactDOM from "react-dom";
 
 // import { Memorize } from "./components/06-memos/Memorize";
 
-import { MemoHook } from "./components/06-memos/MemoHook";
+// import { MemoHook } from "./components/06-memos/MemoHook";
 
-// import { Callbackhook } from "./components/06-memos/Callbackhook";
+import { Callbackhook } from "./components/06-memos/Callbackhook";
 
 // import "./components/08-useReducer/IntroReducer";
 
@@ -30,4 +30,7 @@ import { MemoHook } from "./components/06-memos/MemoHook";
 
 // import { MainApp } from "./components/09-useContext/MainApp";
 
-ReactDOM.render(<MemoHook />, document.getElementById("root"));
+ReactDOM.render(
+  <Callbackhook />,
+  document.getElementById("root")
+);
