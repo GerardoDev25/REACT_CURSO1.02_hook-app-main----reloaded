@@ -18,9 +18,9 @@ import ReactDOM from "react-dom";
 
 // import { Layout } from "./components/05-useLayoutEffect/Layout";
 
-import { Memorize } from "./components/06-memos/Memorize";
+// import { Memorize } from "./components/06-memos/Memorize";
 
-// import { MemoHook } from "./components/06-memos/MemoHook";
+import { MemoHook } from "./components/06-memos/MemoHook";
 
 // import { Callbackhook } from "./components/06-memos/Callbackhook";
 
@@ -30,4 +30,4 @@ import { Memorize } from "./components/06-memos/Memorize";
 
 // import { MainApp } from "./components/09-useContext/MainApp";
 
-ReactDOM.render(<Memorize />, document.getElementById("root"));
+ReactDOM.render(<MemoHook />, document.getElementById("root"));
