@@ -7,9 +7,9 @@ import ReactDOM from "react-dom";
 
 // import { CounterWithCustomHook } from "./components/01-useState/CounterWithCustomHook";
 
-import { SimpleForm } from "./components/02-useEffect/SimpleForm";
+// import { SimpleForm } from "./components/02-useEffect/SimpleForm";
 
-// import { FormWidthCustomHook } from "./components/02-useEffect/FormWidthCustomHook";
+import { FormWidthCustomHook } from "./components/02-useEffect/FormWidthCustomHook";
 
 // import { MultiplesCustomHook } from "./components/03-examples/MultiplesCustomHook";
 
@@ -29,4 +29,7 @@ import { SimpleForm } from "./components/02-useEffect/SimpleForm";
 
 // import { MainApp } from "./components/09-useContext/MainApp";
 
-ReactDOM.render(<SimpleForm />, document.getElementById("root"));
+ReactDOM.render(
+  <FormWidthCustomHook />,
+  document.getElementById("root")
+);

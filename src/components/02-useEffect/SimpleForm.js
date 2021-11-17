@@ -23,12 +23,12 @@ export const SimpleForm = () => {
 
   //   se dispara cuando el forms state cambia
   useEffect(() => {
-    console.log("el form cambio");
+    console.log(FormState);
   }, [FormState]);
 
   //   se dispara cuando el forms state cambia
   useEffect(() => {
-    console.log("el email cambio");
+    console.log(email);
   }, [email]);
 
   const handleInputChange = ({ target }) => {
