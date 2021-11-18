@@ -22,15 +22,12 @@ import ReactDOM from "react-dom";
 
 // import { MemoHook } from "./components/06-memos/MemoHook";
 
-import { Callbackhook } from "./components/06-memos/Callbackhook";
+// import { Callbackhook } from "./components/06-memos/Callbackhook";
 
 // import "./components/08-useReducer/IntroReducer";
 
-// import { TodoApp } from "./components/08-useReducer/TodoApp";
+import { TodoApp } from "./components/08-useReducer/TodoApp";
 
 // import { MainApp } from "./components/09-useContext/MainApp";
 
-ReactDOM.render(
-  <Callbackhook />,
-  document.getElementById("root")
-);
+ReactDOM.render(<TodoApp />, document.getElementById("root"));

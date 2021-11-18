@@ -18,7 +18,7 @@ export const useForm = (initialState = {}) => {
     e.preventDefault();
     console.log(values);
   };
-  return [values, handleInputChange, handleSubmit ,reset];
+  return [values, handleInputChange, handleSubmit, reset];
 
-//   return [values, handleInputChange, reset];
+  //   return [values, handleInputChange, reset];
 };

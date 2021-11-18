@@ -2,54 +2,50 @@ import React from "react";
 import { useForm } from "../../Hooks/useForm";
 
 export const TodoAdd = ({ handleAddTodo }) => {
-   const [
-      { description },
-      handleInputChange,
-      reset,
-   ] = useForm({
-      description: "",
-   });
+  const [{ description }, handleInputChange, , reset] = useForm({
+    description: "",
+  });
 
-   const handleSubmit = (e) => {
-      e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-      if (description.trim().length < 1) {
-         return;
-      }
+    if (description.trim().length < 1) {
+      return;
+    }
 
-      const newTodo = {
-         id: new Date().getTime(),
-         desc: description,
-         done: false,
-      };
+    const newTodo = {
+      id: new Date().getTime(),
+      desc: description,
+      done: false,
+    };
 
-      handleAddTodo(newTodo);
+    handleAddTodo(newTodo);
 
-      reset();
-   };
+    reset();
+  };
 
-   return (
-      <>
-         <h4>agregar todo</h4>
-         <hr />
+  return (
+    <>
+      <h4>agregar todo</h4>
+      <hr />
 
-         <form onSubmit={handleSubmit}>
-            <input
-               type="text"
-               name="description"
-               className="form-control"
-               placeholder="Aprender ..."
-               autoComplete="off"
-               value={description}
-               onChange={handleInputChange}
-            />
-            <button
-               type="submit"
-               className="btn btn-outline-primary mt-1 btn-block"
-            >
-               Agregar
-            </button>
-         </form>
-      </>
-   );
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="description"
+          className="form-control"
+          placeholder="Aprender ..."
+          autoComplete="off"
+          value={description}
+          onChange={handleInputChange}
+        />
+        <button
+          type="submit"
+          className="btn btn-outline-primary mt-1 btn-block"
+        >
+          Agregar
+        </button>
+      </form>
+    </>
+  );
 };
