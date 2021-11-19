@@ -9,9 +9,7 @@ export const TodoAdd = ({ handleAddTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (description.trim().length < 1) {
-      return;
-    }
+    if (!description.trim()) return;
 
     const newTodo = {
       id: new Date().getTime(),
@@ -20,7 +18,6 @@ export const TodoAdd = ({ handleAddTodo }) => {
     };
 
     handleAddTodo(newTodo);
-
     reset();
   };
 
@@ -32,10 +29,10 @@ export const TodoAdd = ({ handleAddTodo }) => {
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          autoComplete="off"
           name="description"
           className="form-control"
           placeholder="Aprender ..."
-          autoComplete="off"
           value={description}
           onChange={handleInputChange}
         />

@@ -10,13 +10,17 @@ export const TodoListItem = ({
     <li key={todo.id} className="list-group-item">
       <p
         className={`${todo.done && "complite"}`}
-        onClick={() => { handleToggle(todo.id);}}
+        onClick={() => {
+          handleToggle(todo.id);
+        }}
       >
         {index + 1}.{todo.desc}
       </p>
       <button
         value={todo.id}
-        onClick={() => { handleDelate(todo.id); }}
+        onClick={() => {
+          handleDelate(todo.id);
+        }}
         className="btn btn-outline-danger"
       >
         Borrar

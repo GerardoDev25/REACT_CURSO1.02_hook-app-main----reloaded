@@ -7,9 +7,8 @@ import { TodoList } from "./TodoList";
 
 import "./style.css";
 
-const init = () => {
-  return JSON.parse(localStorage.getItem("todos")) || [];
-};
+const init = () =>
+  JSON.parse(localStorage.getItem("todos")) || [];
 
 export const TodoApp = () => {
   const [todos, dispatch] = useReducer(todoReducer, [], init);
@@ -19,26 +18,16 @@ export const TodoApp = () => {
   }, [todos]);
 
   const handleDelate = (todoId) => {
-    const action = {
-      type: "delete",
-      payload: todoId,
-    };
-
+    const action = { type: "delete", payload: todoId };
     dispatch(action);
   };
 
   const handleToggle = (todoId) => {
-    dispatch({
-      type: "toggle",
-      payload: todoId,
-    });
+    dispatch({ type: "toggle", payload: todoId });
   };
 
   const handleAddTodo = (newTodo) => {
-    dispatch({
-      type: "add",
-      payload: newTodo,
-    });
+    dispatch({ type: "add", payload: newTodo });
   };
 
   return (
@@ -47,17 +36,16 @@ export const TodoApp = () => {
       <hr />
 
       <div className="row">
+        <div className="col-5">
+          <TodoAdd handleAddTodo={handleAddTodo} />
+        </div>
+        todos
         <div className="col-7">
-          todos
           <TodoList
             todos={todos}
             handleDelate={handleDelate}
             handleToggle={handleToggle}
           />
-        </div>
-
-        <div className="col-5">
-          <TodoAdd handleAddTodo={handleAddTodo} />
         </div>
       </div>
     </div>
